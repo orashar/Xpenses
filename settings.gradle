@@ -1,0 +1,2 @@
+include ':app', ':picky'
+rootProject.name='Xpenses'

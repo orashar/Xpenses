@@ -1,0 +1,15 @@
+11,Cash,Home,Cash,0,0
+12,Cash,Personal,Cash,0,0
+13,Cash,Work,Cash,0,0
+21,Credit Card,Home,Credit Card,0,0
+21,Credit Card,Personal,Credit Card,0,0
+21,Credit Card,Work,Credit Card,0,0
+31,Debit Card,Home,Debit Card,0,0
+31,Debit Card,Personal,Debit Card,0,0
+31,Debit Card,Work,Debit Card,0,0
+41,UPI,Home,UPI,0,0
+41,UPI,Personal,UPI,0,0
+41,UPI,Work,UPI,0,0
+51,Paytm,Home,Paytm,0,0
+52,Paytm,Personal,Paytm,0,0
+53,Paytm,Work,Paytm,0,0

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@id/home"
+            android:icon="@drawable/home"
+            android:title="Home"/>
+
+        <item
+            android:id="@id/funds"
+            android:icon="@drawable/funds"
+            android:title="Funds"/>
+
+        <item
+            android:id="@id/stats"
+            android:icon="@drawable/stats"
+            android:title="Stats"/>
+
+        <item
+            android:id="@+id/drawer_nav_budget"
+            android:title="Budget"/>
+
+        <item
+            android:id="@+id/drawer_nav_setting"
+            android:title="Setting"/>
+    </group>
+
+    <item android:title="Communicate">
+
+        <menu>
+
+            <item
+                android:id="@+id/drawer_nav_imp_exp"
+                android:title="Import / Export data"/>
+
+            <item
+                android:id="@+id/drawer_nav_share"
+                android:title="Share"/>
+        </menu>
+    </item>
+</menu>

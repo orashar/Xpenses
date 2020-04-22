@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Xpenses</string>
+
+    <!--drawer strings for talkback-->
+    <string name="nav_drawer_open">Open Navigation Drawer</string>
+    <string name="nav_drawer_close">Close Navigation Drawer</string>
+
+    <!--home fragment strings-->
+    <string name="income_and_expenses">Income / Expenses</string>
+    <string name="recent_transactions">Recent Transactions</string>
+    <string name="tap_to_add_home_item">Tap to start managing your Xpenses</string>
+    <string name="today">Today</string>
+    <string name="this_week">This week</string>
+    <string name="this_month">This month</string>
+    <string name="this_year">This year</string>
+    <string name="date">Date Duration</string>
+    <string name="all_transactions">All Transactions</string>
+    <string name="green">Green</string>
+    <string name="red">Red</string>
+
+    <!--category selection activity strings-->
+    <string name="category_selector_string">Category</string>
+    <string name="payment_method_selector_string">Payment method</string>
+</resources>

@@ -1,0 +1,118 @@
+1,Automobile,AAA or Road Services
+2,Automobile,Fuel
+3,Automobile,Insurance
+4,Automobile,Lease
+5,Automobile,Maintenance
+6,Automobile,Mileage
+7,Automobile,Registration
+8,Automobile,Other
+9,Entertainment,Concert
+10,Entertainment,Movies
+11,Entertainment,Party
+12,Entertainment,Sports
+13,Entertainment,Other
+29,Home Office,Computer
+30,Home Office,Electronics
+31,Home Office,Stationery
+32,Home Office,Office Furniture
+33,Home Office,Office Supply
+34,Home Office,Other
+44,Insurance,Auto
+45,Insurance,Health
+46,Insurance,Home
+47,Insurance,Life
+48,Insurance,Other
+49,Loans,Auto
+50,Loans,Home Equity
+51,Loans,Mortgage
+52,Loans,Student
+53,Loans,Other
+59,Tax,Property Tax
+60,Tax,Other
+69,Vacation,Airplane
+70,Vacation,Car Rental
+71,Vacation,Food
+72,Vacation,Hotel
+73,Vacation,Misc
+74,Vacation,Other Transportation
+75,Vacation,Taxi
+76,Vacation,Other
+84,Other,Other
+158,Study,Copy
+159,Study,Pen
+160,Study,Xerox
+161,Study,book
+162,Study,fees
+163,Study,magzine
+164,Study,other
+165,Study,paper
+166,Study,exam
+181,Utilities,Cable TV
+182,Utilities,Electric
+183,Utilities,Garbage
+184,Utilities,Gas
+185,Utilities,Internet
+186,Utilities,Telephone
+187,Utilities,Water
+188,Utilities,gadgets
+195,Food,Groceries
+196,Food,Other
+197,Food,Restaurant
+198,Food,Snack
+199,Food,breakfast
+200,Food,cheese
+201,Food,chocolate
+202,Food,coffee
+203,Food,dry fruits
+204,Food,fruit
+205,Food,juice
+206,Food,lunch
+207,Food,milk
+208,Food,party
+209,Food,dinner
+210,Personal,Clothing
+211,Personal,Donation
+212,Personal,Gift
+213,Personal,Other
+214,Personal,Personal Care
+215,Personal,her
+216,Personal,gadgets
+217,Her,Her
+218,Family,Child Care
+219,Family,Child Education
+220,Family,Other
+221,Family,Toy
+222,Family,mobile
+223,Health Care,Dental
+224,Health Care,Eye Care
+225,Health Care,Health Insurance
+226,Health Care,Medical
+227,Health Care,Nutrition
+228,Health Care,Other
+229,Health Care,Prescription
+230,Health Care,Medical tests
+231,Sports,Skipping Rope
+232,Sports,Other
+233,Household,Appliance
+234,Household,Consumables
+235,Household,Home Maintenance
+236,Household,Homeowner Fees
+237,Household,Household Tools
+238,Household,Miscellaneous Household Items
+239,Household,Other
+240,Household,Postage
+241,Household,Rent
+242,Household,monthly expenses
+243,Travel,Airplane
+244,Travel,Car Rental
+245,Travel,Food
+246,Travel,Hotel
+247,Travel,Misc
+248,Travel,Other
+249,Travel,Other Transportation
+250,Travel,Taxi
+251,Travel,bus
+252,Travel,metro
+253,Travel,train
+254,Travel,fuel
+255,Investment,Mutual Fund

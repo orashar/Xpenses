@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/date"
+            android:gravity="start"
+            android:paddingLeft="42dp"
+            android:text="15/54/45"
+            android:textSize="24sp"
+            android:textColor="@color/colorWhite"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:gravity="end"
+            android:paddingRight="32dp"
+            android:text="22:10"
+            android:textSize="24sp"
+            android:textColor="@color/colorWhite"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorAddActivity"
+    android:layout_marginTop="56dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="26dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="8dp"
+            android:padding="8dp"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/textAdd"
+            android:text="Amount"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/amount"
+            android:inputType="phone"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:padding="8dp"
+            android:hint="amount"
+            android:textSize="24dp"
+            android:background="@color/colorAddetbg"
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textAdd"
+            android:text="Account To"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/account_to"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/colorAddetbg"
+                android:padding="8dp"
+                android:text="account"
+                android:textSize="24sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+
+
+            <TextView
+                android:id="@+id/fund_to"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:padding="8dp"
+                android:background="@color/colorAddetbg"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="fund"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:visibility="gone"
+            android:src="@drawable/arrow_up"
+            android:layout_gravity="right"
+            android:rotation="180"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textAdd"
+            android:textStyle="bold"
+            android:text="Account From"
+            android:textSize="18sp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/account_from"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:padding="8dp"
+                android:background="@color/colorAddetbg"
+                android:text="account"
+                android:textSize="24dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+
+
+
+            <TextView
+                android:id="@+id/fund_from"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/colorAddetbg"
+                android:padding="8dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="fund"
+                android:textSize="24dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+<!--
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:textColor="#D51A1A"
+            android:text="Account From"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+
+
+        <ImageView
+            android:src="@drawable/arrow_up"
+            android:layout_gravity="right"
+            android:rotation="180"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:textColor="#D51A1A"
+            android:textStyle="bold"
+            android:text="Fund From"
+            android:textSize="18sp"/>
+
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:gravity="start|center_vertical"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:textStyle="bold"
+            android:textColor="@color/textAdd"
+            android:text="Note"
+            android:textSize="18sp"/>
+
+
+        <EditText
+            android:id="@+id/note"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:padding="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="0dp"
+            android:background="@color/colorAddetbg"
+            android:layout_weight="3"
+            android:layout_height="150dp"
+            android:hint="Note"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:text="cancel"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="0dp"
+            android:textColor="@color/colorWhite"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/save_btn"
+            android:paddingLeft="8dp"
+            android:layout_marginLeft="16dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="save"
+            android:textColor="@color/colorWhite"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/bottom_sheet_f"
+            android:orientation="vertical"
+            android:background="@color/colorPrimaryDark"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+            app:behavior_peekHeight="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="285dp">
+
+            <ListView
+                android:id="@+id/list_f"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_sheet_a"
+            android:orientation="vertical"
+            android:background="@color/colorPrimaryDark"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+            app:behavior_peekHeight="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="285dp">
+
+            <ListView
+                android:id="@+id/list_a"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>

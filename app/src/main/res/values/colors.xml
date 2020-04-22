@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8E7EFB</color>
+    <color name="colorPrimaryDark">#6A0DAD</color>
+    <color name="colorAccent">#ffffff</color>
+
+    <color name="textPrimary">#757F8C</color>
+    <color name="textPrimaryDark">#800080</color>
+    <color name="textAccent">#FA2E69</color>
+    <color name="textAdd">#3A4276</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="balancebg">#F1F3F6</color>
+    <color name="textbalance">#171822</color>
+    <color name="colorAddActivity">#F09D5A</color>
+    <color name="colorAddetbg">#D38A4F</color>
+    <color name="alphaBlack">#862C2A2A</color>
+
+    <color name="fabIcon">#FFAC30</color>
+
+    <color name="bottomSheet">#344955</color>
+    <color name="bottomSheetParent">#F9AA33</color>
+    <color name="bottomSheetChild">#fff</color>
+
+    <color name="textExpense">#ff0000</color>
+    <color name="textIncome">#4CAF50</color>
+
+    <color name="colorMoney">#85bb65</color>
+
+    <color name="white4p">#F5F5F5</color>
+
+</resources>

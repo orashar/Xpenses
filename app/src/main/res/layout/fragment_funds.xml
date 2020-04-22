@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:weightSum="10"
+        android:background="@color/colorAccent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <TextView
+            android:text="Account Overview"
+            android:textColor="@color/textAdd"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:background="@drawable/all_corner_round_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/total_amount_tv"
+                    android:text="INR $$$"
+                    android:textSize="36sp"
+                    android:textColor="@color/textbalance"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Current Balance"
+                    android:textSize="18sp"
+                    android:textColor="@color/textAdd"
+                    android:layout_marginLeft="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_gravity="end|top"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/add_btn"
+                    android:src="@drawable/ic_addfund"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"/>
+
+                <TextView
+                    android:layout_gravity="end"
+                    android:text="Add Fund"
+                    android:textSize="18sp"
+                    android:textColor="@color/textAdd"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Total Income"
+                    android:textSize="24sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/total_green_tv"
+                    android:text="INR $$$"
+                    android:textSize="24sp"
+                    android:textColor="#00ff00"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Total Expense"
+                    android:textSize="24sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/total_red_tv"
+                    android:text="INR $$$"
+                    android:textSize="24sp"
+                    android:textColor="#ff0000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+   <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fund_lv"
+       android:background="@drawable/ic_fundbg"
+       android:paddingTop="70dp"
+        android:layout_below="@id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/bottom_sheet_fund_add"
+            android:orientation="vertical"
+            android:background="@color/colorAddActivity"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+            app:behavior_peekHeight="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:paddingTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:paddingLeft="8dp"
+                    android:gravity="center_vertical"
+                    android:text="Title"
+                    android:textSize="24sp"
+                    android:textColor="@color/textAdd"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+
+                <EditText
+                    android:id="@+id/fund_title_et"
+                    android:hint="fund name"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="16dp"
+                    android:padding="8dp"
+                    android:background="@color/colorAddetbg"
+                    android:textSize="24sp"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/textPrimary"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"/>
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingLeft="8dp"
+                android:gravity="center_vertical"
+                android:text="Account"
+                android:textSize="24sp"
+                android:textColor="@color/textAdd"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:id="@+id/fund_account_et"
+                android:background="@color/colorAddetbg"
+                android:hint="account"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="16dp"
+                android:padding="8dp"
+                android:textSize="24sp"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/textPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingLeft="8dp"
+                android:gravity="center_vertical"
+                android:text="Type"
+                android:textSize="24sp"
+                android:textColor="@color/textAdd"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:id="@+id/fund_type_et"
+                android:hint="fund type"
+                android:background="@color/colorAddetbg"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="16dp"
+                android:padding="8dp"
+                android:textSize="24sp"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/textPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingLeft="8dp"
+                android:gravity="center_vertical"
+                android:text="Balance"
+                android:textSize="24sp"
+                android:textColor="@color/textAdd"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:id="@+id/fund_initial_bal_et"
+                android:hint="Initial bal"
+                android:background="@color/colorAddetbg"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="16dp"
+                android:padding="8dp"
+                android:textSize="24sp"
+                android:inputType="number"
+                android:textColor="@color/textPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingLeft="8dp"
+                android:gravity="center_vertical"
+                android:text="Note"
+                android:textSize="24sp"
+                android:textColor="@color/textAdd"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:id="@+id/fund_desc_et"
+                android:hint="fund desc"
+                android:background="@color/colorAddetbg"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="16dp"
+                android:padding="8dp"
+                android:textSize="24sp"
+                android:inputType="text"
+                android:textColor="@color/textPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+            <ImageView
+                android:id="@+id/save_fund_btn"
+                android:src="@drawable/ic_save_fund"
+                android:layout_marginTop="4dp"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</RelativeLayout>
